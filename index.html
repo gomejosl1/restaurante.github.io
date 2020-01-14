@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/fontawesome-all.css"> -->
+    <title>Portafolio - Jose Luis Gómez</title>
+  </head>
+  <body>
+<div class="parallax wrapper"></div>
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+            <div class="logo">
+                PORTAFOLIO
+            </div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#section1" class="scrollNav-links scrollNav-active">About</a></li>
+                    <li><a href="#section2" class="scrollNav-links">Social</a></li>
+                    <li><a href="#section4" class="scrollNav-links">Blog</a></li>
+                    <li class="margin-last" ><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+<div id="sections" data-spy="scroll" data-target="#menu" data-offset="50">
+    <div class="jumbotron-fluid text-center one scrollNav-content" id="section1">
+            <h2>Section 1</h2>
+            <p>Click on the link to see the "smooth" scrolling effect.</p>
+            <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+            <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+    </div>
+
+    <div class="jumbotron-fluid text-center one scrollNav-content" id="section2">
+            <h2>Section 2</h2>
+            <p>Click on the link to see the "smooth" scrolling effect.</p>
+            <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+            <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+    </div>
+    <div class="jumbotron-fluid text-center one scrollNav-content" id="section3">
+            <h2>Section 3</h2>
+            <p>Click on the link to see the "smooth" scrolling effect.</p>
+            <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+            <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+    </div>
+    <div class="jumbotron-fluid text-center one scrollNav-content" id="section4">
+            <h2>Section 4</h2>
+            <p>Click on the link to see the "smooth" scrolling effect.</p>
+            <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+            <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+    </div>
+</div>
+
+    <section class="bg1">
+    </section>
+    <!-- <h1 class="text-center mt-5 display-4 text-primary" > Portafolio </h1> -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/One-Page-Scroll-Navigation-Bar-jQuery/scroll-navigation.js"></script>
+    <link rel="stylesheet" href="css/main.css"> 
+        <!-- Optional JavaScript -->
+        <script type="text/javascript"> 
+                    var s = new scrollNav();
+            s.init();
+            $(document).ready(function(){
+                
+                $(".menu-icon").on("click", function(){
+                    $("nav ul").toggleClass("showing")
+                });
+            });
+        
+            $(window).on("scroll",function(){
+                if($(window).scrollTop()){
+                    $('nav').addClass('black')
+                }else{
+                    $('nav').removeClass('black')
+                }
+            })
+            </script>
+  </body>
+</html>

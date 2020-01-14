@@ -1,0 +1,185 @@
+html{
+    scroll-behavior: smooth;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;    
+}
+
+body{
+    font-family: sans-serif;   
+}
+
+.scrollNav-active {
+
+    color: red;
+  
+  }
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/computer-background2.jpg) no-repeat ;
+    background-size: cover;
+
+}
+
+content, static {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.parallax {
+    /* The image used */
+    background-image: url(../img/computer-background2.jpg);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.content{
+    width: 90%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;    
+}
+  #section1 {
+    width: 100%;
+    height: 100vh;
+    padding-top: 5%;
+    background-size: cover;
+    background-color: cyan;
+    top:10%
+  }
+
+  #section2 {
+    width: 100%;
+    height: 100vh;
+    padding-top: 5%;
+    background-size: cover;
+    background-color: rgb(73, 88, 88);
+    top:10%
+  }
+
+  #section3 {
+    width: 100%;
+    height: 100vh;
+    padding-top: 5%;
+    background-size: cover;
+    background-color: lavender;
+    top:10%
+  }
+
+  #section4 {
+    width: 100%;
+    height: 100vh;
+    padding-top: 5%;
+    background-size: cover;
+    background-color: steelblue;
+    top:10%
+  }
+  
+.logo{
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+}
+
+.margin-last{
+    margin-right: 15em;
+}
+nav ul{
+    list-style: none;
+    /* background: rgba(0,123,255,.5); */
+    background:rgba(0, 0, 0, 0.49);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    transition: 1s;
+}
+
+nav.black ul{
+    background: #000000;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a:hover{
+    color: cyan;
+    margin-top: 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: seashell;
+    font-size: 20px;
+    
+}
+
+.menu ul li a{
+    text-decoration: none;
+}
+
+.menu-icon{
+    width: 100%;
+    background: #000000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+
+@media(max-width:580px){
+    .logo{
+        position: fixed;
+        top: 0;
+        margin-top: 0;    
+    }
+
+    nav ul{
+        max-height: 0px;
+        background: #000000;
+    }
+    nav.black ul{
+        background: #000000;
+    }
+
+    .showing{
+        max-height: 20em;
+    }
+
+    nav ul li{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0px;
+        text-align: center;        
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+}
+
